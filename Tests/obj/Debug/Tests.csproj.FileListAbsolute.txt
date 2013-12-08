@@ -1,0 +1,9 @@
+D:\Projects\Analize\Tests\bin\Debug\Tests.dll
+D:\Projects\Analize\Tests\bin\Debug\Tests.pdb
+D:\Projects\Analize\Tests\bin\Debug\Analize.exe
+D:\Projects\Analize\Tests\bin\Debug\Analize.pdb
+D:\Projects\Analize\Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
+D:\Projects\Analize\Tests\obj\Debug\Tests.dll
+D:\Projects\Analize\Tests\obj\Debug\Tests.pdb
+D:\Projects\Analize\Tests\bin\Debug\Tests.dll.CodeAnalysisLog.xml
+D:\Projects\Analize\Tests\bin\Debug\Tests.dll.lastcodeanalysissucceeded

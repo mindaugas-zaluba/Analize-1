@@ -1,0 +1,14 @@
+C:\Projects\Analize\Analize\bin\Debug\Analize.exe.config
+C:\Projects\Analize\Analize\bin\Debug\Analize.exe
+C:\Projects\Analize\Analize\bin\Debug\Analize.pdb
+C:\Projects\Analize\Analize\obj\Debug\Analize.csprojResolveAssemblyReference.cache
+C:\Projects\Analize\Analize\obj\Debug\Analize.exe
+C:\Projects\Analize\Analize\obj\Debug\Analize.pdb
+D:\Projects\Analize\Analize\bin\Debug\Analize.exe.config
+D:\Projects\Analize\Analize\obj\Debug\Analize.exe
+D:\Projects\Analize\Analize\obj\Debug\Analize.pdb
+D:\Projects\Analize\Analize\bin\Debug\Analize.exe
+D:\Projects\Analize\Analize\bin\Debug\Analize.pdb
+D:\Projects\Analize\Analize\obj\Debug\Analize.csprojResolveAssemblyReference.cache
+D:\Projects\Analize\Analize\bin\Debug\Analize.exe.CodeAnalysisLog.xml
+D:\Projects\Analize\Analize\bin\Debug\Analize.exe.lastcodeanalysissucceeded

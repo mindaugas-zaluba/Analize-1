@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 11.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="11.0">
+ <Namespaces>
+  <Namespace Name="Analize.Array">
+   <Messages>
+    <Message Id="Analize" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Analize' in namespace name 'Analize.Array'.</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+ </Namespaces>
+ <Targets>
+  <Target Name="D:\Projects\Analize\Analize\bin\Debug\Analize.exe">
+   <Modules>
+    <Module Name="analize.exe">
+     <Messages>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Sign 'Analize.exe' with a strong name key.</Issue>
+      </Message>
+      <Message Id="Analize" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="Breaking">
+       <Issue Name="Assembly" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Analize' in assembly name 'Analize.exe'.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Error">Mark 'Analize.exe' with CLSCompliant(true) because it exposes externally visible types.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="Analize">
+       <Types>
+        <Type Name="Program" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#Main(System.String[])" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Projects\Analize\Analize" File="Program.cs" Line="42">Method 'Program.Main(string[])' passes a literal string as parameter 'value' of a call to 'Console.WriteLine(string)'. Retrieve the following string(s) from a resource table instead: "Array size to be generated:".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Projects\Analize\Analize" File="Program.cs" Line="120">Method 'Program.Main(string[])' passes a literal string as parameter 'value' of a call to 'Console.WriteLine(string)'. Retrieve the following string(s) from a resource table instead: "Start From Beginning? (Y/N)".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Projects\Analize\Analize" File="Program.cs" Line="115">Method 'Program.Main(string[])' passes a literal string as parameter 'value' of a call to 'Console.WriteLine(string)'. Retrieve the following string(s) from a resource table instead: "Time Taken: ".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Projects\Analize\Analize" File="Program.cs" Line="116">Method 'Program.Main(string[])' passes a literal string as parameter 'value' of a call to 'Console.WriteLine(string)'. Retrieve the following string(s) from a resource table instead: "operations: ".</Issue>
+            </Message>
+            <Message Id="System.Int32.TryParse(System.String,System.Int32@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="NonBreaking">
+             <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Projects\Analize\Analize" File="Program.cs" Line="43">'Program.Main(string[])' calls 'int.TryParse(string, out int)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+            </Message>
+            <Message Id="args" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="d:\Projects\Analize\Analize" File="Program.cs" Line="29">Parameter 'args' of 'Program.Main(string[])' is never used. Remove the parameter or use it in the method body.</Issue>
+            </Message>
+            <Message Id="System.String.Compare(System.String,System.String,System.StringComparison)" TypeName="UseOrdinalStringComparison" Category="Microsoft.Globalization" CheckId="CA1309" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="NonBreaking">
+             <Issue Name="StringComparison" Certainty="75" Level="Error" Path="d:\Projects\Analize\Analize" File="Program.cs" Line="121">'Program.Main(string[])' passes 'StringComparison.InvariantCultureIgnoreCase' as the 'StringComparison' parameter to 'string.Compare(string, string, StringComparison)'. To perform a non-linguistic comparison, specify 'StringComparison.Ordinal' or 'StringComparison.OrdinalIgnoreCase' instead.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#printArray(Analize.Array.IArray)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Projects\Analize\Analize" File="Program.cs" Line="181">Method 'Program.printArray(IArray)' passes a literal string as parameter 'value' of a call to 'Console.WriteLine(string)'. Retrieve the following string(s) from a resource table instead: "--------".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Projects\Analize\Analize" File="Program.cs" Line="194">Method 'Program.printArray(IArray)' passes a literal string as parameter 'value' of a call to 'Console.WriteLine(string)'. Retrieve the following string(s) from a resource table instead: "--------".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Projects\Analize\Analize" File="Program.cs" Line="182">Method 'Program.printArray(IArray)' passes a literal string as parameter 'value' of a call to 'Console.WriteLine(string)'. Retrieve the following string(s) from a resource table instead: "Size: ".</Issue>
+            </Message>
+            <Message Id="ex" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="d:\Projects\Analize\Analize" File="Program.cs" Line="189">'Program.printArray(IArray)' declares a variable, 'ex', of type 'EndOfStreamException', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Analize.Array">
+       <Types>
+        <Type Name="CountingSorter`1" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#fileName" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'CountingSorter&lt;T&gt;.fileName' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FileArray" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="Breaking">
+           <Issue Name="ProvideDisposeBool" Certainty="95" Level="Error">Provide an overridable implementation of Dispose(bool) on 'FileArray' or mark the type as sealed. A call to Dispose(false) should only clean up native resources. A call to Dispose(true) should clean up both managed and native resources.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#ArraySize" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'FileArray.ArraySize' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Dispose()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CallGCSuppressFinalizeCorrectly" Category="Microsoft.Usage" CheckId="CA1816" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="NonBreaking">
+             <Issue Name="NotCalled" Certainty="75" Level="CriticalWarning" Path="d:\Projects\Analize\Analize\Array" File="FileArray.cs" Line="163">Change 'FileArray.Dispose()' to call 'GC.SuppressFinalize(object)'. This will prevent derived types that introduce a finalizer from needing to re-implement 'IDisposable' to call it.</Issue>
+            </Message>
+            <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="Breaking">
+             <Issue Name="DisposeImplementation" Certainty="95" Level="Error" Path="d:\Projects\Analize\Analize\Array" File="FileArray.cs" Line="163">Modify 'FileArray.Dispose()' so that it calls Dispose(true), then calls GC.SuppressFinalize on the current object instance ('this' or 'Me' in Visual Basic), and then returns.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetRange(System.Int32,System.Int32,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="d:\Projects\Analize\Analize\Array" File="FileArray.cs" Line="115">In method 'FileArray.GetRange(int, int, string)', object 'result' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'result' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InsertAt(System.Int32,System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="Breaking">
+             <Issue Name="Reserved" Certainty="95" Level="Error" Path="d:\Projects\Analize\Analize\Array" File="FileArray.cs" Line="49">'FileArray.InsertAt(int, int)' creates an exception of type 'IndexOutOfRangeException', an exception type that is reserved by the runtime and should never be raised by managed code. If this exception instance might be thrown, use a different exception type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ReadAt(System.Int64)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="Breaking">
+             <Issue Name="Reserved" Certainty="95" Level="Error" Path="d:\Projects\Analize\Analize\Array" File="FileArray.cs" Line="126">'FileArray.ReadAt(long)' creates an exception of type 'IndexOutOfRangeException', an exception type that is reserved by the runtime and should never be raised by managed code. If this exception instance might be thrown, use a different exception type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ReadNext()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ex" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="d:\Projects\Analize\Analize\Array" File="FileArray.cs" Line="155">'FileArray.ReadNext()' declares a variable, 'ex', of type 'EndOfStreamException', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RemoveAt(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="Breaking">
+             <Issue Name="Reserved" Certainty="95" Level="Error" Path="d:\Projects\Analize\Analize\Array" File="FileArray.cs" Line="89">'FileArray.RemoveAt(int)' creates an exception of type 'IndexOutOfRangeException', an exception type that is reserved by the runtime and should never be raised by managed code. If this exception instance might be thrown, use a different exception type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ReplaceAt(System.Int64,System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="Breaking">
+             <Issue Name="Reserved" Certainty="95" Level="Error" Path="d:\Projects\Analize\Analize\Array" File="FileArray.cs" Line="135">'FileArray.ReplaceAt(long, int)' creates an exception of type 'IndexOutOfRangeException', an exception type that is reserved by the runtime and should never be raised by managed code. If this exception instance might be thrown, use a different exception type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FileLinkedList" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="Breaking">
+           <Issue Name="ProvideDisposeBool" Certainty="95" Level="Error">Provide an overridable implementation of Dispose(bool) on 'FileLinkedList' or mark the type as sealed. A call to Dispose(false) should only clean up native resources. A call to Dispose(true) should clean up both managed and native resources.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#ArraySize" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'FileLinkedList.ArraySize' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CurrentAddress" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'FileLinkedList.CurrentAddress' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Dispose()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CallGCSuppressFinalizeCorrectly" Category="Microsoft.Usage" CheckId="CA1816" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="NonBreaking">
+             <Issue Name="NotCalled" Certainty="75" Level="CriticalWarning" Path="d:\Projects\Analize\Analize\Array" File="FileLinkedList.cs" Line="206">Change 'FileLinkedList.Dispose()' to call 'GC.SuppressFinalize(object)'. This will prevent derived types that introduce a finalizer from needing to re-implement 'IDisposable' to call it.</Issue>
+            </Message>
+            <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="Breaking">
+             <Issue Name="DisposeImplementation" Certainty="95" Level="Error" Path="d:\Projects\Analize\Analize\Array" File="FileLinkedList.cs" Line="206">Modify 'FileLinkedList.Dispose()' so that it calls Dispose(true), then calls GC.SuppressFinalize on the current object instance ('this' or 'Me' in Visual Basic), and then returns.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetRange(System.Int32,System.Int32,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="d:\Projects\Analize\Analize\Array" File="FileLinkedList.cs" Line="135">In method 'FileLinkedList.GetRange(int, int, string)', object 'result' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'result' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message Id="start+1" TypeName="OperationsShouldNotOverflow" Category="Microsoft.Usage" CheckId="CA2233" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="CriticalWarning" Path="d:\Projects\Analize\Analize\Array" File="FileLinkedList.cs" Line="137">Correct the potential overflow in the operation 'start+1' in 'FileLinkedList.GetRange(int, int, string)'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ReadAt(System.Int64)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="Breaking">
+             <Issue Name="Reserved" Certainty="95" Level="Error" Path="d:\Projects\Analize\Analize\Array" File="FileLinkedList.cs" Line="146">'FileLinkedList.ReadAt(long)' creates an exception of type 'IndexOutOfRangeException', an exception type that is reserved by the runtime and should never be raised by managed code. If this exception instance might be thrown, use a different exception type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ReadNext()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ex" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="d:\Projects\Analize\Analize\Array" File="FileLinkedList.cs" Line="198">'FileLinkedList.ReadNext()' declares a variable, 'ex', of type 'EndOfStreamException', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ReplaceAt(System.Int64,System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="Breaking">
+             <Issue Name="Reserved" Certainty="95" Level="Error" Path="d:\Projects\Analize\Analize\Array" File="FileLinkedList.cs" Line="161">'FileLinkedList.ReplaceAt(long, int)' creates an exception of type 'IndexOutOfRangeException', an exception type that is reserved by the runtime and should never be raised by managed code. If this exception instance might be thrown, use a different exception type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IArray" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Push(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="val" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning">In method 'IArray.Push(int)', correct the spelling of 'val' in parameter name 'val' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MergeSorter`1" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#fileName" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'MergeSorter&lt;T&gt;.fileName' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MergeSort(!0)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="arr" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="d:\Projects\Analize\Analize\Array" File="MergeSorter.cs" Line="21">In method 'MergeSorter&lt;T&gt;.MergeSort(T)', correct the spelling of 'arr' in parameter name 'arrIntegers' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#operations" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2013-12-08 14:43:17Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'MergeSorter&lt;T&gt;.operations' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>Assemblies should have valid strong names</Name>
+   <Description>Either the assembly has no strong name, an invalid one, or the strong name is valid only because of the computer configuration. The assembly should not be deployed in this state. The most common causes of this are: 1) The assembly's contents were modified after it was signed. 2) The signing process failed. 3) The assembly was delay-signed. 4) A registry key existed that allowed the check to pass (where it would not have otherwise).</Description>
+   <Resolution Name="NoStrongName">Sign {0} with a strong name key.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182127(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823">
+   <Name>Avoid unused private fields</Name>
+   <Description>Private fields were detected that do not appear to be accessed within the assembly. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Resolution Name="Default">It appears that field {0} is never used or is only ever assigned to. Use this field or remove it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms245042(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="CallGCSuppressFinalizeCorrectly" Category="Microsoft.Usage" CheckId="CA1816">
+   <Name>Call GC.SuppressFinalize correctly</Name>
+   <Description>Call GC.SuppressFinalize to suppress finalization of your instance once Dispose has been called. Objects that implement IDisposable should call SuppressFinalize from the IDisposable.Dispose method to prevent the garbage collector from calling Object.Finalize on an object that does not require it.</Description>
+   <Resolution Name="NotCalled">Change {0} to call {1}. This will prevent derived types that introduce a finalizer from needing to re-implement 'IDisposable' to call it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182269(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalWarning</MessageLevel>
+   <File Name="usagerules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000">
+   <Name>Dispose objects before losing scope</Name>
+   <Description>If a disposable object is not explicitly disposed before all references to it are out of scope, the object will be disposed at some indeterminate time when the garbage collector runs the finalizer of the object. Because an exceptional event might occur that will prevent the finalizer of the object from running, the object should be explicitly disposed instead.</Description>
+   <Resolution Name="ExceptionEdge">In method {0}, object {1} is not disposed along all exception paths. Call System.IDisposable.Dispose on object {1} before all references to it are out of scope.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182289(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303">
+   <Name>Do not pass literals as localized parameters</Name>
+   <Description>Literal strings that are embedded in source code are difficult to localize. Avoid passing literal strings as arguments in circumstances where a localized string is generally expected.</Description>
+   <Resolution Name="KnownValue">Method {0} passes a literal string as parameter '{1}' of a call to {2}. Retrieve the following string(s) from a resource table instead: {3}.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182187(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051">
+   <Name>Do not declare visible instance fields</Name>
+   <Description>Instance fields that are visible outside of the type that declares them, limit your ability to change the implementation details for those data items. Use properties instead. They do not compromise usability or performance and they do provide flexibility in that they conceal the implementation details of the underlying data.</Description>
+   <Resolution Name="Default">Because field {0} is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182141(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="designrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806">
+   <Name>Do not ignore method results</Name>
+   <Description>The result of methods that return new instances of strings should be assigned to a variable and subsequently used. If the result of a method that creates a new object, such as String.ToLower(), is not assigned to a variable, the call is wasted.</Description>
+   <Resolution Name="TryParse">{0} calls {1} but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182273(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201">
+   <Name>Do not raise reserved exception types</Name>
+   <Description>User code should not create and raise exceptions of certain types that are reserved by the runtime or which are of a too general exception type. Exception types that are too general include Exception, SystemException, and ApplicationException. Exception types that are reserved by the runtime include ThreadAbortException, OutOfMemoryException, ExecutionEngineException, and IndexOutOfRangeException.</Description>
+   <Resolution Name="Reserved">{0} creates an exception of type {1}, an exception type that is reserved by the runtime and should never be raised by managed code. If this exception instance might be thrown, use a different exception type.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182338(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="usagerules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+   <Name>Identifiers should be spelled correctly</Name>
+   <Description>The individual words that make up an identifier should not be abbreviated and should be spelled correctly. If this rule generates a false positive on a term that should be recognized, add the word to the FxCop custom dictionary.</Description>
+   <Resolution Name="Assembly">Correct the spelling of '{0}' in assembly name {1}.</Resolution>
+   <Resolution Name="MemberParameter">In method {0}, correct the spelling of '{1}' in parameter name {2} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Resolution Name="Namespace">Correct the spelling of '{0}' in namespace name '{1}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264492(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalWarning</MessageLevel>
+   <File Name="namingrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063">
+   <Name>Implement IDisposable correctly</Name>
+   <Description>All IDisposable types should implement the Dispose pattern correctly.</Description>
+   <Resolution Name="DisposeImplementation">Modify {0} so that it calls Dispose(true), then calls GC.SuppressFinalize on the current object instance ('this' or 'Me' in Visual Basic), and then returns.</Resolution>
+   <Resolution Name="ProvideDisposeBool">Provide an overridable implementation of Dispose(bool) on {0} or mark the type as sealed. A call to Dispose(false) should only clean up native resources. A call to Dispose(true) should clean up both managed and native resources.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms244737(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+   <Name>Mark assemblies with CLSCompliantAttribute</Name>
+   <Description>Assemblies should explicitly state their CLS compliance using the CLSCompliant attribute. An assembly without this attribute is not CLS-compliant. Assemblies, modules, and types can be CLS-compliant even if some parts of the assembly, module, or type are not CLS-compliant. The following rules apply: 1) If the element is marked CLSCompliant, any noncompliant members must have the CLSCompliant attribute present with its argument set to false. 2) A comparable CLS-compliant alternative member must be supplied for each member that is not CLS-compliant.</Description>
+   <Resolution Name="Default">Mark {0} with CLSCompliant(true) because it exposes externally visible types.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182156(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="OperationsShouldNotOverflow" Category="Microsoft.Usage" CheckId="CA2233">
+   <Name>Operations should not overflow</Name>
+   <Description>Arithmetic operations should not be done without first validating the operands to prevent overflow.</Description>
+   <Resolution Name="Default">Correct the potential overflow in the operation '{0}' in {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182354(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalWarning</MessageLevel>
+   <File Name="usagerules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804">
+   <Name>Remove unused locals</Name>
+   <Description>Remove locals that are not used or are only assigned to in method implementations.</Description>
+   <Resolution Name="Default">{0} declares a variable, {1}, of type {2}, which is never used or is only assigned to. Use this variable or remove it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182278(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801">
+   <Name>Review unused parameters</Name>
+   <Description>Review parameters in non-virtual methods that are not used in the method body to ensure no correctness exists around failure to access them. Unused parameters incur maintenance and performance costs. Sometimes a violation of this rule can point to an implementation bug in the method (i.e. the parameter should actually have been used in the method body). Exclude warnings of this rule if the parameter has to exist because of backward compatibility.</Description>
+   <Resolution Name="Default">Parameter {0} of {1} is never used. Remove the parameter or use it in the method body.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182268(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="UseOrdinalStringComparison" Category="Microsoft.Globalization" CheckId="CA1309">
+   <Name>Use ordinal StringComparison</Name>
+   <Description>For non-linguistic comparisons, StringComparison.Ordinal or StringComparison.OrdinalIgnoreCase should be used instead of the linguistically-sensitive StringComparison.InvariantCulture.</Description>
+   <Resolution Name="StringComparison">{0} passes '{1}' as the 'StringComparison' parameter to {2}. To perform a non-linguistic comparison, specify 'StringComparison.Ordinal' or 'StringComparison.OrdinalIgnoreCase' instead.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb385972(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="11.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>
